@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace EllAlderton\Example;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use EllAlderton\Example\Commands\ExampleCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ExampleServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('example')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_example_table')
+            ->hasCommand(ExampleCommand::class);
     }
 }

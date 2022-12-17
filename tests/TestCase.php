@@ -2,9 +2,9 @@
 
 namespace EllAlderton\Example\Tests;
 
+use EllAlderton\Example\ExampleServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use EllAlderton\Example\ExampleServiceProvider;
 
 class TestCase extends Orchestra
 {
